@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="register.css"> <!-- You can link your CSS file here -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+        </ul>
+    </nav>
+    <h1>Event Registration</h1>
+    <form id="registration-form">
+        <h2>Student Information:</h2>
+        
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+        
+        <label for="university">School/University Name:</label><br>
+        <input type="text" id="university" name="university"><br><br>
+        
+        <label for="year">Year of Study:</label><br>
+        <select id="year" name="year">
+            <option value="fe">First Year</option>
+            <option value="se">Second Year</option>
+            <option value="te">Third Year</option>
+            <option value="be">Fourth Year</option>
+            <option value="school">School Student</option>
+        </select><br><br>
+
+        <div class="section">
+            <h3>Event Selection:</h3>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="event" value="Event 1" data-price="20"></td>
+                    <td>Event 1</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="event" value="Event 2" data-price="15"></td>
+                    <td>Event 2</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="event" value="Event 3" data-price="25"></td>
+                    <td>Event 3</td>
+                </tr>
+            </table>
+        </div>
+          
+        <div class="section">
+            <h3>Total Amount to Pay:</h3>
+            <p id="total-amount">$0</p>
+        </div>
+        
+        <button type="submit" id="submit-pay">Submit and Pay</button>
+        <a href="access-card.html"  >test link</a>
+    </form>
+    <p>By submitting this form, you agree to the terms and conditions outlined above.</p>
+
+    <script src="script-register.js"></script>
+
+</body>
+</html>

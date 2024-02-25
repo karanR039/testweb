@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.registration-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.event-section {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid #ccc;
+}
+
+.register-button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block; /* Ensure the button behaves as a block-level element */
+    margin-left: auto; /* Set the left margin to auto */
+    margin-right: auto;
+}

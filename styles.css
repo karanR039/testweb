@@ -1,0 +1,144 @@
+/* Reset CSS */
+
+* {
+    font-family: "Kode Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* This keeps the background fixed as you scroll */
+}
+@keyframes example {
+    0% {background-color: black;}
+    50% {background-color: gray;}
+    100% {background-color: black;}
+  }
+  
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+/* Big Screen Animation Styles */
+.animation {
+    /* Styles for the big screen animation */
+    
+        width: auto;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      
+
+}
+.animated-text {
+    animation: example 4s infinite; /* Apply the animation */
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center; /* Centers the text horizontally */
+    font-size: xx-large ;
+
+}
+p{
+    text-align: center;
+    font-size: large;
+    line-height: 2;
+}
+
+
+
+/* About Section Styles */
+.about-section {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+
+
+/* Events Section Styles */
+.events-section {
+    padding: 50px 0;
+}
+.events-section h2{
+    font-weight: bold;
+    font-size: 1000%;
+    transform: rotate(-30deg);
+    text-align: left;
+}
+.photo-sequence {
+    width: 100px;
+    height: 100px; /* Set height of container */
+    margin-top: 30%;
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox to arrange images in a row */
+    transform: rotate(-30deg);
+
+}
+
+.photo-sequence img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between images */
+    margin-bottom: auto;
+    margin-inline-end: auto;
+    
+
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+    margin-top: 50%;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.events-section {
+    color: #f2f2f2;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
